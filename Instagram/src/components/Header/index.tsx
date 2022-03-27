@@ -2,10 +2,13 @@ import React from 'react';
 import { SafeAreaView,StatusBar, StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { Back, BackIcons, ImageLogo } from './style';
 
+
+//importação dos icones
 import Icon from 'react-native-vector-icons/Octicons';
 import Icon1 from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon2 from 'react-native-vector-icons/AntDesign';
 
+//padronizar tamanho dos icones
 const SizeIcons = 25;
 
 
