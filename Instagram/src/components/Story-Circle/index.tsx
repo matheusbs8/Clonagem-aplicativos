@@ -1,22 +1,23 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
-import {Back, ImagePerfil} from './style'
+import {TextPerfil, ImagePerfil, BackButton} from './style'
 import { LinearGradient } from 'expo-linear-gradient';
 
 interface CircleStoryProps {
     NameOfPerfil: string;
-    ImagepOfPerfil: string;
+    ImageOfPerfil: string;
     Visible: boolean;
     Futurefunction?: any;
 }
 
-const Story_Circle = ({ NameOfPerfil, ImagepOfPerfil, Visible, Futurefunction }: CircleStoryProps) => {
-
+const Story_Circle = ({ NameOfPerfil, ImageOfPerfil, Visible, Futurefunction }: CircleStoryProps) => {
+    const url="'"+ImageOfPerfil+"'";
+    console.log(url);
     return (
         <>
         {Visible == true ?
         (
-            <View>
+            <BackButton>
             <LinearGradient colors={['#D34496', '#FAA258']} style={{
                 width: 70,
                 height:70,
@@ -28,15 +29,19 @@ const Story_Circle = ({ NameOfPerfil, ImagepOfPerfil, Visible, Futurefunction }:
           
                 <ImagePerfil  source={require('../../../assets/Images/StoryCircle/perfil.jpg')}></ImagePerfil>
             </LinearGradient>
-            </View>
+            <TextPerfil>
+                {NameOfPerfil}
+            </TextPerfil>
+            </BackButton>
         )
         :
         (
-            <TouchableOpacity>
-          
+            <BackButton>
                 <ImagePerfil  source={require('../../../assets/Images/StoryCircle/perfil.jpg')}></ImagePerfil>
-            
-            </TouchableOpacity>
+                <TextPerfil>
+                    Seu Story
+                </TextPerfil>
+            </BackButton>
         )}
         </>
     );
