@@ -12,8 +12,7 @@ interface CircleStoryProps {
 }
 
 const Story_Circle = ({ NameOfPerfil, ImageOfPerfil, Visible, Futurefunction, sizeBig }: CircleStoryProps) => {
-    const url="${ImageOfPerfil}";
-    console.log(url);
+
     return (
         <>
         {Visible == true ? sizeBig == true ?

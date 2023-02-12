@@ -6,17 +6,38 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-nat
 
 
 export const Background = styled.View`
-  height: ${hp('75%')};
+ 
   width:${wp('100%')};
   display: flex;
   background-color:#fff;
 `;
 
-export const ImagePubli = styled.Image`
-  height: 70%;
+export const Shadow = styled.View`
+  height:100%;
+  width:100%;
+  background-color:rgba(0,0,0,.4);
+  display: flex;
+  align-items:center;
+  justify-content:center;
+`;
+
+export const BackgroundImage = styled.TouchableOpacity`
+  height: ${hp('50%')};
+  min-height:450px ;
   width: 100%;
   display: flex;
-  background-color:#fff;
+  align-items:center;
+  justify-content:center;
+`;
+
+
+export const ImagemPublicacao = styled.ImageBackground`
+height:${hp('40%')};
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+
 `;
 
 export const TextPerfil = styled.Text`
@@ -26,16 +47,10 @@ export const TextPerfil = styled.Text`
   margin-left: 5;
   margin-right: 7;
 `;
-export const ImagePerfil = styled.Image`
-width: 66px;
-height:66px;
-border-radius:50px;
-border: 2px solid white;
-margin-right:1px;
-`;
 
 export const Header = styled.View`
-  height: 8%;
+  height: ${hp('5%')};
+  min-height:50px ;
   width:100%;
   display: flex;
   flex-direction: row;
@@ -46,15 +61,15 @@ export const Header = styled.View`
     border-bottom-width: .07px;
 `;
 export const HeaderS = styled.View`
-  height: 8%;
+  height: ${hp('5%')};
+  min-height:50px ;
   width:100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items:center;
   padding: 0px 10px;
-  border-bottom-color: rgba(0,0,0,.3);
-    border-bottom-width: .07px;
+
 `;
 export const BackImage = styled.View`
   width: 50%;
@@ -79,5 +94,23 @@ export const BackIcons = styled.View`
     height: 100%;
     width: 40%;
     margin-left:-20px;
-
 `  
+export const Box = styled.View`
+  
+  width:100%;
+  display: flex;
+
+  padding:0px 10px 10px 10px;
+`;
+
+export const TextNegrito = styled.Text`
+  font-size:12px;
+  font-family: Segoe;
+  color: black;
+  font-weight:700;
+`;
+export const TextDesc = styled.Text`
+  font-size:12px;
+  font-family: Segoe;
+  color: black;
+`;

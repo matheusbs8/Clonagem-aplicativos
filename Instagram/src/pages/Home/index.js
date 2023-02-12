@@ -11,7 +11,7 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons"
 import Story_Circle from '../../components/Story-Circle/index';
 import Stories from '../../Utils/Stories';
 import Publicacao from '../../Components/Publicacao';
-
+import Publicacoes from '../../Utils/Publicacao';
 
 export default function Home() {
 const sizeIcon = 21;
@@ -45,11 +45,16 @@ const sizeIcon = 21;
     <ScrollView showsVerticalScrollIndicator={false}>
      <HorizontalScroll horizontal={true} showsVerticalScrollIndicator={false}>
      {Stories.map((item, index) => (
-             <Story_Circle key={index} NameOfPerfil={item.label} ImageOfPerfil={item.image} Visible={true} sizeBig={true} ></Story_Circle>
+             <Story_Circle key={index} NameOfPerfil={item.label} ImageOfPerfil={item.image} Visible={true} sizeBig={true} 
+             ></Story_Circle>
             ))}
      </HorizontalScroll>
-     <Publicacao></Publicacao> 
-     <Publicacao></Publicacao> 
+
+     {Publicacoes.map((item, index) => (
+             <Publicacao key={index} NameOfPerfil={item.label} ImageOfPerfil={item.image} descricao={item.descricao} verificado={item.verificado}  
+             Ncurtidas={item.Ncurtidas} comentarios={item.comentarios} ImagePublicacao={item.imagemPubli}></Publicacao>
+            ))}
+     
     
      
     </ScrollView>

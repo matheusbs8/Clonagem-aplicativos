@@ -4,7 +4,9 @@ const Publicacoes = [
       image: require('../../assets/imagens/Stories/Story-perfil (1).jpg'),
       verificado:false,
       saved:true,
-      descricao:`Obrigado, Nação, pelo apoio até o final. É um privilégio ter a Maior Torcida do Mundo do nosso lado. #VamosFlamengo 📸 @marcelocortes_ / CRF`,
+      descricao:`Obrigado, Nação, pelo apoio até o final. É um privilégio ter a Maior Torcida do Mundo do nosso lado. #VamosFlamengo 📸 @marcelocortes_ / CRF
+      Obrigado, Nação, pelo apoio até o final. É um privilégio ter a Maior Torcida do Mundo do nosso lado. #VamosFlamengo 📸 @marcelocortes_ / CRF
+      Obrigado, Nação, pelo apoio até o final. É um privilégio ter a Maior Torcida do Mundo do nosso lado. #VamosFlamengo 📸 @marcelocortes_ / CRF`,
       imagemPubli:require('../../assets/imagens/Publicacao/publi1.jpg'),
       Ncurtidas:20,
       comentarios:[
@@ -137,7 +139,8 @@ const Publicacoes = [
       image: require('../../assets/imagens/Stories/Story-perfil (8).jpg'),
       verificado:false,
       saved:true,
-      descricao:`Obrigado, Nação, pelo apoio até o final. É um privilégio ter a Maior Torcida do Mundo do nosso lado. #VamosFlamengo 📸 @marcelocortes_ / CRF`,
+      descricao:`Obrigado, Nação, pelo apoio até o final. É um privilégio ter a Maior Torcida do Mundo do nosso lado. #VamosFlamengo 📸 @marcelocortes_ / CRF
+      Obrigado, Nação, pelo apoio até o final. É um privilégio ter a Maior Torcida do Mundo do nosso lado. #VamosFlamengo 📸 @marcelocortes_ / CRF`,
       imagemPubli:require('../../assets/imagens/Publicacao/publi8.jpg'),
       Ncurtidas:20,
       comentarios:[
